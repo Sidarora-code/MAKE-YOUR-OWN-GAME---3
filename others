@@ -1,0 +1,35 @@
+  if(add<20&&lives!==0){
+
+    fill("red")
+    text("💓"+lives,8,30)
+    text("💰"+score,8,589)
+    text("⏳"+time,500,589)}
+
+
+       if(add>=20&&lives!==0){
+       textSize(50)
+       fill (color(random (0,155),random(0,155),random(0,155)))
+     text("𝓨𝓞𝓤 𝓦𝓞𝓝!",200,100)  
+     text("💓"+lives,250,230)
+     text("💰"+score,250,430)
+     text("⏳"+time,250,550)
+     ball.x=2000
+     paddle.x=1000 
+}
+
+if(lives<=0){
+  textSize(50)
+  fill (color(random (0,155),random(0,155),random(0,155)))
+  text("𝓨𝓞𝓤 LOSE",200,100)  
+  text("💓"+lives,250,230)
+  text("💰"+score,250,330)
+  text("⏳"+time,250,430)
+  ba.visible=true
+  ball.x=2000
+  paddle.x=1000
+}
+
+hit2.play()}
+
+   hitsound.play()
+
